@@ -2,10 +2,24 @@ import { login, signup } from "../actions/action"
 import { createClient } from "@/utils/supabase/server";
 
 export default async function Home() {
-  const supabase = createClient();
+  const supabase = createClient("https://edwrpskmitwxvipmcyoy.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVkd3Jwc2ttaXR3eHZpcG1jeW95Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcyODU2NjUzNCwiZXhwIjoyMDQ0MTQyNTM0fQ.0gHmdxie-I7hLOMRDhoxjQNYSoN4u9WnSdWjQhm3nPI");
   const { data: { user } } = await supabase.auth.getUser();
+  console.log(user)
 
-  console.log(user);
+
+  async function listUsers() {
+    const { data, error } = await supabase.auth.admin.listUsers();
+  
+    if (error) {
+      console.error('Error fetching users:', error);
+    } else {
+      console.log('Users:', data);
+    }
+  }
+  
+  listUsers();
+
+  
 
   return (
     <>

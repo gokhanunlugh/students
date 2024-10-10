@@ -9,6 +9,10 @@ import { createClient } from '@/utils/supabase/server'
 
 export async function login(formData) {
   const supabase = createClient()
+  const { data: { user } } = await supabase.auth.getUser();
+  console.log(user);
+
+  
 
   
   const data = {
@@ -23,6 +27,11 @@ export async function login(formData) {
   }
 
   revalidatePath('/', 'layout')
+
+  if(user.user_metadata.role == "admin"){
+    redirect('/admin')
+  }
+  
   redirect('/')
 }
 
