@@ -3,9 +3,9 @@ import { defaultHeader } from "@/utils/header";
 
 
 export default async function addStudent(formData){
-  const sinav1 = formData.get('sinav1')
-  const sinav2 = formData.get('sinav2')
-  const sinav3 = formData.get('sinav3')
+  const sinav1 = Number(formData.get('sinav1'))
+  const sinav2 = Number(formData.get('sinav2'))
+  const sinav3 = Number(formData.get('sinav3'))
   const ort = (sinav1 + sinav2 + sinav3)/3;
   const name = formData.get('name')
   console.log(sinav1);
