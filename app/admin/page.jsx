@@ -3,6 +3,7 @@ import { createClient } from "@/utils/supabase/server";
 import { redirect } from 'next/navigation'
 import addStudent from "./action";
 import { defaultHeader } from "@/utils/header";
+import StudentTable from "../components/studentsTable/page";
 
 
 export default async function AdminPage() {
@@ -14,11 +15,14 @@ export default async function AdminPage() {
     redirect("/")
   }
 
-  const studensTable = await fetch('https://edwrpskmitwxvipmcyoy.supabase.co/rest/v1/student?select=*%27', {
+  const response = await fetch('https://edwrpskmitwxvipmcyoy.supabase.co/rest/v1/student?select=*%27', {
     method: "GET",
     headers: defaultHeader
   })
 
+  const studensTable = await response.json();
+  console.log(studensTable);
+  
 
   return (
     <>
@@ -35,7 +39,7 @@ export default async function AdminPage() {
       </form>
 
 
-
+      <StudentTable studensTable={studensTable} />
 
     </>
   )
