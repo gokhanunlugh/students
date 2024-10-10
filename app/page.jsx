@@ -1,6 +1,12 @@
 import { login, signup } from "../actions/action"
+import { createClient } from "@/utils/supabase/server";
 
-export default function Home() {
+export default async function Home() {
+  const supabase = createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+
+  console.log(user);
+
   return (
     <>
      <form className="loginForm">
