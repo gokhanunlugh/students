@@ -19,17 +19,16 @@ export default async function AdminPage(){
          
         <form action={addStudent}>
 
-
             <input type="text" name="name" placeholder="İsim" /> 
             <input type="number" name="sinav1" placeholder="Sınav1" />
             <input type="number" name="sinav2" placeholder="Sınav2" />
             <input type="number" name="sinav3" placeholder="Sınav3" />
             <button>Ekle</button>
-            
-
-        
 
         </form>
+        
+
+
         
         </>
     )
