@@ -29,7 +29,6 @@ export async function login(formData) {
 export async function signup(formData) {
   const supabase = createClient()
 
-  
   const data = {
     email: formData.get('email'),
     password: formData.get('password'),

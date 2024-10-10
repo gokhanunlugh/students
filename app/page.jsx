@@ -1,6 +1,4 @@
-import Image from "next/image";
-import styles from "./page.module.css";
-import { login, signup } from "@actions/action"
+import { login, signup } from "../actions/action"
 
 export default function Home() {
   return (
