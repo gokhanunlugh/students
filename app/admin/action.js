@@ -8,7 +8,7 @@ export default async function addStudent(formData){
   const sinav3 = formData.get('sinav3')
   const ort = (sinav1 + sinav2 + sinav3)/3;
   const name = formData.get('name')
-  console.log(formData);
+  console.log(sinav1);
   
   const response = await fetch('https://edwrpskmitwxvipmcyoy.supabase.co/rest/v1/student',{
     method: "POST",
