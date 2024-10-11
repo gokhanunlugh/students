@@ -27,7 +27,8 @@ export default async function Home() {
      <form className="loginForm">
 
         <h1>Öğrenci Bilgi Sistemi Kayıt</h1>
-
+    
+    <div className="inputContainer">
        <div>
           <label htmlFor="fullName">Name</label>
           <input id="fullName" name="fullName" type="text" required />
@@ -38,10 +39,11 @@ export default async function Home() {
           <input id="email" name="email" type="email" required />
       </div>
 
-      <div>
+      <div className="password">
           <label htmlFor="password">Password</label>
           <input id="password" name="password" type="password" required />
       </div>
+    </div>
 
       <button formAction={login}>Log in</button>
       <button formAction={signup}>Sign up</button>

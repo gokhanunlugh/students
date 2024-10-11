@@ -41,15 +41,21 @@ a {
   }
 }
 
+body{
+  background-color: #cbd5e1;
+}
+
 .container{
   display: flex;
   flex-direction: column;
+  background-color: aquamarine;
 }
 
 .loginForm{
+  margin-block: 100px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
   justify-content: center;
   width: 50%;
@@ -58,11 +64,11 @@ a {
   div{
     width: 100%;
     display: flex;
-    gap: 10px;
-    justify-content: space-around;
+    gap: 15px;
     align-items: center;
+    justify-content: center;
     input{
-      width: 80%;
+      width: 50%;
       height: 30px;
       border-radius: 10px;
       border: 2px solid grey;
@@ -73,5 +79,37 @@ a {
       font-weight: bold;
     }
   }
+
+  button{
+    width: 40%;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #72e3ad;
+    color: white;
+    font-size: 18px !important;
+    font-weight: bold;
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button:hover{
+    background-color: #171717;
+    
+  }
+
+  .password{
+    margin-left: -40px;
+  }
+
+  .inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    margin-left: -75px;
+  }
   
+
 }
