@@ -27,8 +27,9 @@ export default async function AdminPage() {
   return (
     <>
 
+    <div className="container">
 
-      <form action={addStudent}>
+      <form className="addStudentForm" action={addStudent}>
 
         <input type="text" name="name" placeholder="İsim" />
         <input type="number" name="sinav1" placeholder="Sınav1" />
@@ -38,8 +39,9 @@ export default async function AdminPage() {
 
       </form>
 
-
       <StudentTable studensTable={studensTable} />
+
+    </div>
 
     </>
   )

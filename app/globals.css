@@ -40,3 +40,37 @@ a {
     color-scheme: dark;
   }
 }
+
+.container{
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%;
+  margin-inline: auto;
+  div{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+    input{
+      width: 80%;
+      height: 30px;
+      border-radius: 10px;
+      border: 2px solid grey;
+    }
+    label{
+      color: lightcoral;
+      font-size: 20px;
+    }
+  }
+  
+}

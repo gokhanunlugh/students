@@ -23,7 +23,11 @@ export default async function Home() {
 
   return (
     <>
+     
      <form className="loginForm">
+
+        <h1>Öğrenci Bilgi Sistemi Kayıt</h1>
+
        <div>
           <label htmlFor="fullName">Name</label>
           <input id="fullName" name="fullName" type="text" required />
