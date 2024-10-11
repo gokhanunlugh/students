@@ -1,4 +1,3 @@
-"use client"
 
 export default function StudentTable({studensTable}){
   console.log(studensTable);
