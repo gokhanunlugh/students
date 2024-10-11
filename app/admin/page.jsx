@@ -39,7 +39,9 @@ export default async function AdminPage() {
 
       </form>
 
-      <StudentTable studensTable={studensTable} />
+      <div className="studentTable">
+        <StudentTable studensTable={studensTable} />
+      </div>
 
     </div>
 

@@ -35,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+.studentTable {
+  width: 650px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
