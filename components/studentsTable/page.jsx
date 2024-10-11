@@ -5,7 +5,7 @@ export default function StudentTable({studensTable}){
   return (
     <>
       {studensTable.map(x=> (
-        <p key={x.id} >{x.name} {x.sinav_1} {x.sinav_2} {x.sinav_3} {x.ort}</p>
+        <p key={x.id} >{x.name} -- Sınav 1:{x.sinav_1} Sınav 2:{x.sinav_2} Sınav 3:{x.sinav_3} Ortalama:{x.ort}</p>
       ))}
     </>
   )

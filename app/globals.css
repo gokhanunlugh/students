@@ -37,6 +37,19 @@ a {
 
 .studentTable {
   width: 650px;
+  margin: 0 auto;
+  font-size: 20px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.addStudentForm{
+  padding-top: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,7 +65,8 @@ body{
 .container{
   display: flex;
   flex-direction: column;
-  background-color: aquamarine;
+  background-color: black;
+  height: 100vh;
 }
 
 .loginForm{
