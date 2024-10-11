@@ -3,7 +3,7 @@ import { createClient } from "@/utils/supabase/server";
 import { redirect } from 'next/navigation'
 import addStudent from "./action";
 import { defaultHeader } from "@/utils/header";
-import StudentTable from "../components/studentsTable/page";
+import StudentTable from "@/components/studentsTable/page";
 
 
 export default async function AdminPage() {
