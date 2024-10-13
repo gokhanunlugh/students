@@ -29,12 +29,12 @@ export default async function Home() {
         <h1>Öğrenci Bilgi Sistemi Kayıt</h1>
     
     <div className="inputContainer">
-       <div>
+       <div className="inputItem">
           <label htmlFor="fullName">Name</label>
           <input id="fullName" name="fullName" type="text" required />
        </div>
 
-       <div>
+       <div className="inputItem">
           <label htmlFor="email">Email</label>
           <input id="email" name="email" type="email" required />
       </div>
@@ -45,8 +45,8 @@ export default async function Home() {
       </div>
     </div>
 
-      <button formAction={login}>Log in</button>
-      <button formAction={signup}>Sign up</button>
+      <button className="loginBtn" formAction={login}>Log in</button>
+      <button className="signupBtn" formAction={signup}>Sign up</button>
     </form>
     </>
   );

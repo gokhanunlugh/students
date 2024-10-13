@@ -84,28 +84,16 @@ body{
   width: 50%;
   height: 50%;
   margin-inline: auto;
-  div{
-    width: 100%;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    input{
-      width: 50%;
-      height: 30px;
-      border-radius: 10px;
-      border: 2px solid grey;
-    }
-    label{
-      color: lightcoral;
-      font-size: 20px;
-      font-weight: bold;
-    }
-  }
+}
 
-  button{
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.loginBtn{
     width: 40%;
     border-radius: 10px;
     height: 40px;
@@ -117,21 +105,49 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  button:hover{
-    background-color: #171717;
-    
-  }
+.signupBtn{
+  width: 40%;
+  border-radius: 10px;
+  height: 40px;
+  background-color: #72e3ad;
+  color: white;
+  font-size: 18px !important;
+  font-weight: bold;
+  border: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.loginBtn:hover{
+  background-color: #171717;
+}
 
+.signupBtn:hover{
+  background-color: #171717;
+}
 
-  .inputContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-  }
-  
+.inputItem{
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 
+input{
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+
+label{
+  color: lightcoral;
+  font-size: 20px;
+  font-weight: bold;
 }
